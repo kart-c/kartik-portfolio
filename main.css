@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
+:root {
+	--primary-color: #00b0ff;
+	--white-color: #fff;
+	--bold: 800;
+	--secondary-color: #edf2f4;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Sora', sans-serif;
+	font-weight: 400;
+}
+
+.main-nav {
+	background-color: var(--primary-color);
+	padding: 1.5rem;
+	border-bottom-left-radius: 2rem;
+}
+
+.main-nav__brand > a {
+	font-weight: var(--bold);
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+.main-nav__links {
+	padding-right: 3rem;
+	list-style: none;
+	text-align: right;
+}
+
+.main-nav__link {
+	display: inline-block;
+}
+
+.main-nav__link a {
+	text-decoration: none;
+	margin: 1.2rem;
+	color: var(--white-color);
+}
+@media (max-width: 450px) {
+	.main-nav__link a {
+		margin: 0.8rem;
+	}
+}
+
+.open-link {
+	font-weight: var(--bold);
+}
+
+.main-header__img {
+	text-align: center;
+}
+
+.main-header__img > img {
+	padding: 2.5rem 0;
+	width: 80%;
+	max-width: 600px;
+}
+
+.main-header__highlight {
+	color: var(--primary-color);
+}
+
+section {
+	padding: 2rem;
+}
+
+section:nth-child(odd) {
+	background-color: var(--secondary-color);
+}
+
+.container:nth-child(odd) p {
+	padding-bottom: 1rem;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+}
+
+.primary-button {
+	padding: 0.5rem 1.2rem;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	background-color: var(--white-color);
+	border-radius: 1.1rem;
+	text-decoration: none;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.primary-button:hover,
+.primary-button:active {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.secondary-button {
+	padding: 0.5rem 1.2rem;
+	color: var(--white-color);
+	border: 1px solid var(--primary-color);
+	background-color: var(--primary-color);
+	border-radius: 1.1rem;
+	text-decoration: none;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.secondary-button:hover,
+.secondary-button:active {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.main-footer {
+	background-color: var(--primary-color);
+	padding: 1.5rem;
+	border-top-right-radius: 2rem;
+}
+
+.main-footer__container {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	color: var(--white-color);
+}
+
+.main-footer__socials {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+.main-footer__social a {
+	text-decoration: none;
+	color: var(--white-color);
+}

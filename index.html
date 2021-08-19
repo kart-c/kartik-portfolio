@@ -3,45 +3,56 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
 		<title>Kart's Portfolio</title>
 	</head>
 	<body>
 		<header>
-			<a href="/">IAMDEVELOPER</a>
-			<nav>
-				<ul>
-					<li>Home</li>
-					<li>Projects</li>
-					<li>Blogs</li>
+			<nav class="main-nav">
+				<div class="main-nav__brand">
+					<a href="/">IAMDEVELOPER</a>
+				</div>
+				<ul class="main-nav__links">
+					<li class="main-nav__link open-link"><a href="/">Home</a></li>
+					<li class="main-nav__link"><a href="">Projects</a></li>
+					<li class="main-nav__link"><a href="">Blogs</a></li>
 				</ul>
 			</nav>
-			<div>
+			<div class="main-header__img">
 				<img src="./images/undraw_Coding_re_iv62.png" alt="programming image" />
-				<h1>Hi I'm Kartik a web developer</h1>
+				<h1>Hi I'm Kartik <span class="main-header__highlight">a web developer</span></h1>
 			</div>
 		</header>
 		<main>
 			<section>
-				<h2>Technologies</h2>
-				<p>I am familiar with HTML5, CSS3, Git, Javascript, NodeJS, ReactJS, and Web Hosting</p>
+				<div class="container">
+					<h2>Technologies</h2>
+					<p>I am familiar with HTML5, CSS3, Git, Javascript, NodeJS, ReactJS, and Web Hosting</p>
+				</div>
 			</section>
 			<section>
-				<h2>Projects</h2>
-				<p>I have hosted some projects online to showcase. You can see them here</p>
-				<button>See Projects</button>
+				<div class="container">
+					<h2>Projects</h2>
+					<p>I have hosted some projects online to showcase. You can see them here</p>
+					<a href="/" class="primary-button">See Projects</a>
+				</div>
 			</section>
 			<section>
-				<h2>Blogs</h2>
-				<p>Check out some these blogs I wrote</p>
-				<button>Read Blogs</button>
+				<div class="container">
+					<h2>Blogs</h2>
+					<p>Check out these blogs I wrote</p>
+					<a href="/" class="secondary-button">Read Blogs</a>
+				</div>
 			</section>
 		</main>
-		<footer>
-			<h3>Social</h3>
-			<ul>
-				<li><a href="">Github</a></li>
-				<li><a href="">LinkedIn</a></li>
-			</ul>
+		<footer class="main-footer">
+			<div class="main-footer__container">
+				<h3>Social</h3>
+				<ul class="main-footer__socials">
+					<li class="main-footer__social"><a href="">Github</a></li>
+					<li class="main-footer__social"><a href="">LinkedIn</a></li>
+				</ul>
+			</div>
 		</footer>
 	</body>
 </html>
