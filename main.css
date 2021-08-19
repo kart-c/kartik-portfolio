@@ -18,6 +18,7 @@ body {
 	background-color: var(--primary-color);
 	padding: 1.5rem;
 	border-bottom-left-radius: 2rem;
+	margin-bottom: 1rem;
 }
 
 .main-nav__brand > a {
@@ -43,20 +44,22 @@ body {
 }
 @media (max-width: 450px) {
 	.main-nav__link a {
-		margin: 0.8rem;
+		margin: 0.5rem;
 	}
 }
 
 .open-link {
 	font-weight: var(--bold);
+	font-size: 1.2rem;
 }
 
-.main-header__img {
+.main-header__container {
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
-.main-header__img > img {
-	padding: 2.5rem 0;
+.main-header__container > img {
+	padding: 1rem 0;
 	width: 80%;
 	max-width: 600px;
 }
@@ -65,16 +68,12 @@ body {
 	color: var(--primary-color);
 }
 
-section {
+.section {
 	padding: 2rem;
 }
 
-section:nth-child(odd) {
+.section:nth-child(odd) {
 	background-color: var(--secondary-color);
-}
-
-.container:nth-child(odd) p {
-	padding-bottom: 1rem;
 }
 
 .container {
@@ -83,22 +82,9 @@ section:nth-child(odd) {
 }
 
 .primary-button {
-	padding: 0.5rem 1.2rem;
-	color: var(--primary-color);
-	border: 1px solid var(--primary-color);
-	background-color: var(--white-color);
-	border-radius: 1.1rem;
-	text-decoration: none;
-	transition: background-color 0.2s, color 0.2s;
-}
-
-.primary-button:hover,
-.primary-button:active {
-	background-color: var(--primary-color);
-	color: var(--secondary-color);
-}
-
-.secondary-button {
+	margin-top: 1rem;
+	margin-right: 1rem;
+	display: inline-block;
 	padding: 0.5rem 1.2rem;
 	color: var(--white-color);
 	border: 1px solid var(--primary-color);
@@ -108,10 +94,28 @@ section:nth-child(odd) {
 	transition: background-color 0.2s, color 0.2s;
 }
 
+.primary-button:hover,
+.primary-button:active {
+	background-color: var(--white-color);
+	color: var(--primary-color);
+}
+
+.secondary-button {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 0.5rem 1.2rem;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	background-color: var(--white-color);
+	border-radius: 1.1rem;
+	text-decoration: none;
+	transition: background-color 0.2s, color 0.2s;
+}
+
 .secondary-button:hover,
 .secondary-button:active {
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .main-footer {
@@ -137,4 +141,12 @@ section:nth-child(odd) {
 .main-footer__social a {
 	text-decoration: none;
 	color: var(--white-color);
+}
+
+.project-list {
+	list-style: none;
+}
+
+.project-list li {
+	padding: 3rem;
 }
