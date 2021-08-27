@@ -3,7 +3,7 @@
 	--primary-color: #00b0ff;
 	--white-color: #fff;
 	--bold: 800;
-	--secondary-color: #edf2f4;
+	--secondary-color: #ecf1f3;
 }
 
 body {
@@ -145,6 +145,7 @@ body {
 
 .project-list {
 	list-style: none;
+	padding: 0;
 }
 
 .project-list li {
@@ -177,4 +178,26 @@ body {
 
 .open {
 	display: block;
+}
+
+.code-block {
+	display: block;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	background-color: #eee;
+	border: 2px solid #999;
+}
+
+.code-block__inline {
+	background-color: #eee;
+	border: 2px solid #999;
+	padding: 0 0.5rem;
+}
+
+.code-block__span {
+	display: block;
+}
+
+figcaption {
+	text-align: center;
 }

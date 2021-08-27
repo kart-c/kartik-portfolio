@@ -36,28 +36,68 @@
 						<p>
 							HTML stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. In simple
 							words HTML is used to create web pages. It is the skeleton of a web page.It is made of
-							a series of elements which consists of tags and attributes. This is what the current
-							page with only html looks like.
+							a series of elements which consists of tags and attributes. This is a sample
+							boilerplate of HTML code
+							<code class="code-block">
+								<span class="code-block__span">&#10094;!DOCTYPE html&#10095;</span
+								><span class="code-block__span">&#10094;html&#10095;</span
+								><span class="code-block__span"> &#10094;head&#10095;</span
+								><span class="code-block__span">&#10094;/head&#10095;</span
+								><span class="code-block__span"> &#10094;body&#10095;</span
+								><span class="code-block__span">&#10094;/body&#10095;</span
+								><span class="code-block__span">&#10094;/html&#10095;</span>
+							</code>
+							The <code class="code-block__inline">&#10094;!DOCTYPE html&#10095;</code> is written
+							to declare or instruct the browser that this document is the HTML5 version. After this
+							the html document includes the actual <code class="code-block__inline">html</code> tag
+							which contains the <code class="code-block__inline">head</code> tag and the
+							<code class="code-block__inline">body</code> tag. The head tag includes metadata,
+							title of the page, and also the external link to a css file. The
+							<code class="code-block__inline">body</code> tag includes the actual markup which is
+							displayed to the user. This is what the current page with only html looks like.
 						</p>
 						<img src="/images/html.png" alt="plain-html" class="container-image" />
 						<figcaption>This is what HTML without CSS would look like</figcaption>
 						<p>
 							Looks ugly right. This is where CSS comes in. CSS or <b>C</b>ascading <b>S</b>tyle
-							<b>S</b>heets. CSS is used for styling and positoning elements on a website. It is how
-							you make your website presentable to the users. CSS uses selectors to target html
+							<b>S</b>heets. CSS is used for styling and positoning elements on a website. CSS uses
+							selectors like a tag selector, class selector, or an id selector to target html
 							elements and style them accordingly. CSS can be written inline within html elements or
 							you can write a internal stylesheet in the head section of the html. Another way to
 							attach CSS, which is also the most recommended one, is to write an external stylesheet
-							and attach it.
+							and attach it. This is what a CSS style tag looks like
+							<code class="code-block"
+								><span class="code-block__span">body {</span
+								><span class="code-block__span">background-color: red</span>
+								<span class="code-block__span">}</span></code
+							>
+							This code above will set the body element's background color to red. There are also
+							CSS frameworks online like Bootstrap, Semantic UI, or Bulma which makes design easy.
+							These frameworks are pre-written libraries which can be used by linking them to the
+							HTML file and just using the pre-written CSS class names to style the desired element.
 						</p>
 						<p>
 							Now you must be thinking what is Javascript? Javascript is a programming language used
-							to make your web page interactive. Did you click the image above to zoom in or did you
-							squint your eyes to read what it says? That is an example of Javascript. Whenever you
-							visit a website there a lot of interactive elements which change when a user interacts
-							with them. This is done using javascript.
+							to make your web page interactive. Did you click the image above to zoom in? If not
+							give it a try. That is an example of Javascript. Whenever you visit a website there
+							are a lot of interactive elements which change when a user interacts with them, like
+							clicking a button or logging into your favourite social media account or using the
+							search bar in an e-commerce website etc. This is all done using javascript. Javascript
+							targets elements and uses logic to make the element interact when a user interacts
+							with them. This is how a typical javascript selector looks like
+							<code class="code-block"
+								><span class="code-block__span"
+									>var varName = document.querySelector('selector');</span
+								></code
+							>
+							Javascript also uses frameworks and libraries like React.js, Angular, or Vue which
+							allows easier development of web applications.
 						</p>
-						<p>To summarize think of HTML as noun, CSS as adjective and javascript as a verb.</p>
+						<p>
+							To summarize HTML makes the skeleton of a webpage or a web application, CSS styles the
+							html and makes it presentable, and javascript makes it interactive. These three
+							complete the front-end part of the web.
+						</p>
 					</section>
 				</li>
 			</ul>
