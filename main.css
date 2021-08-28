@@ -172,7 +172,7 @@ body {
 }
 
 .main-footer__container {
-	max-width: 600px;
+	max-width: 30rem;
 	margin: auto;
 	text-align: center;
 	color: var(--white-color);
