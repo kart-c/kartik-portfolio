@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../main.css" />
+		<title>Kartik Portfolio</title>
+	</head>
+	<body>
+		<div class="backdrop"></div>
+		<header>
+			<nav class="main-nav">
+				<div class="main-nav__brand">
+					<a href="/">IAMDEVELOPER</a>
+				</div>
+				<ul class="main-nav__links">
+					<li class="main-nav__link"><a href="../index.html">Home</a></li>
+					<li class="main-nav__link"><a href="projects.html">Projects</a></li>
+					<li class="main-nav__link"><a href="blogs.html">Blogs</a></li>
+				</ul>
+			</nav>
+			<div class="main-header__container">
+				<h2>What is <span class="highlight">Frontend Web Development?</span></h2>
+			</div>
+		</header>
+		<main>
+			<ul class="project-list">
+				<li>
+					<section class="container">
+						<p>
+							All html elements on a webpage are considered to be boxes. "Box Model" refers to
+							design and layout of these html boxes. Every element in a html document is wrapped
+							with the box model. It consists of content, padding, border, and margin. This is what
+							a typical box model looks like
+						</p>
+						<img
+							src="../images/box-model.png"
+							alt="css-box-model"
+							class="container-image box-model-image"
+						/>
+						<figcaption>CSS Box Model</figcaption>
+						<p>
+							You must have seen this image in your browser developer tools. The total size of box
+							is calculated as
+							<code class="code-block">
+								<span class="code-block__span"
+									>Width: content width + padding-left + padding-right + border-left +
+									border-right</span
+								>
+								<span class="code-block__span"
+									>Height: content height + padding-top + padding-down + border-top +
+									border-down</span
+								>
+							</code>
+						</p>
+						<p>
+							Let's start with content width. Content width depends on the the display of the
+							element. Block elements have a default width of 100% whereas inline elements have
+							default width of whatever content they hold.
+						</p>
+						<p>
+							Padding is the space around the element's content. It is the space between the content
+							and the border. The default padding for all elements is set to 0. Padding can be set
+							individually by using
+							<code class="code-block">
+								<span class="code-block__span">padding-top:</span>
+								<span class="code-block__span">padding-right:</span>
+								<span class="code-block__span">padding-bottom:</span>
+								<span class="code-block__span">padding-left:</span></code
+							>
+							or by using the shorthand property
+							<code class="code-block"
+								><span class="code-block__span">padding: (top) (right) (bottom) (left)</span></code
+							>
+							Padding values can be set using percentages or lengths.
+						</p>
+						<p>
+							The border is used to set a border around the elements. By default elements do not
+							have borders. It can be set using the border shorthand<code class="code-block"
+								><code class="code-block__span">border: (width) (style) (color)</code></code
+							>
+							If the <span class="code-block__inline">box-sizing</span> property is set to border
+							box then the width set to the element will include the width of the border and the
+							padding.
+						</p>
+						<p>
+							Now you must be thinking, why is margin not included in the width and height
+							calculations above? That's because margin is a special property because it does not
+							affect our selected element but rather the surrounding content. Margin pushes away the
+							surrounding elements instead of increasing the element size. By default block level
+							elements have some default top and bottom margin set to it. Margin can be set the same
+							way padding is set.
+						</p>
+						<p>
+							These four parts, the margin, border, padding, and the content, make up the box model
+							for all the html elements.
+						</p>
+					</section>
+				</li>
+			</ul>
+		</main>
+		<footer class="main-footer">
+			<div class="main-footer__container">
+				<h3>Social</h3>
+				<ul class="main-footer__socials">
+					<li class="main-footer__social"><a href="https://github.com/kart-c">Twitter</a></li>
+					<li class="main-footer__social"><a href="https://github.com/kart-c">Github</a></li>
+					<li class="main-footer__social">
+						<a href="https://www.linkedin.com/in/kartikeya-choudhary-92881621a/">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
