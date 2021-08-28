@@ -121,7 +121,7 @@ body {
 
 .primary-button:hover,
 .primary-button:active {
-	background-color: var(--secondary-color);
+	background-color: var(--card-hover);
 	color: var(--primary-color);
 }
 
