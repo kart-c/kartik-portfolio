@@ -97,6 +97,11 @@ body {
 	border-radius: 1.5rem;
 }
 
+#rest-countries__api {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
 .card:hover {
 	box-shadow: 2px 2px 2px 2px #888;
 	background-color: var(--card-hover);
