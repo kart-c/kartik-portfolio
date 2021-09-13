@@ -111,6 +111,11 @@ body {
 	outline: none;
 }
 
+.card > h3 > a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
 .primary-button {
 	margin-top: 1rem;
 	margin-right: 1rem;
